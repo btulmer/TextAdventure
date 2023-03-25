@@ -1,5 +1,5 @@
 import java.util.*;
-public class Map {
+public class Engine {
     private Room[][] layout;
     private int currentRow;
     private int currentCol;
@@ -8,7 +8,7 @@ public class Map {
     private boolean hasRead;
 
 
-    public Map(){
+    public Engine(){
         createDefaultMap();
         createDefaultObjects();
         createDefaultPlayer();
@@ -117,7 +117,7 @@ public class Map {
                     Main.moveRoom(layout[currentRow][currentCol]);
                 }
                 else{
-                    System.out.println("You can't go that way"+ currentRow + currentCol);
+                    System.out.println("You can't go that way");
                 }
             }
             else{
@@ -161,9 +161,6 @@ public class Map {
                 if (item.getName().equals(listPut[1])) {
                     player.drop(item, currentRoom);
                     return;
-                }
-                else{
-                    System.out.println("You dropped nothing");
                 }
             }
         } else if (listPut[0].equals("inventory")  || listPut[0].equals("display")) {
@@ -333,11 +330,11 @@ public class Map {
                     continue;
                 }
 
-                else if(getRoom(r,c).getFiller()){
+                 if(getRoom(r,c).getFiller()){
                     System.out.print("?");
                 }
                 else{
-                    if(layout[currentRow][currentCol].getHasVisited()){
+                    if(layout[r][c].getHasVisited()){
                         System.out.print(" ");}
                     else{
                         System.out.print("?");
@@ -352,3 +349,4 @@ public class Map {
         return player;
     }
 }
+

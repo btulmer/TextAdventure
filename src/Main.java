@@ -11,7 +11,7 @@ public class Main {
         currentRoom.describe();
     }
     public static void startGame(){
-       System.out.println("                             ________    _____   ____ _____________________.____     ______________________                            \n" +
+System.out.println("                             ________    _____   ____ _____________________.____     ______________________                            \n" +
                "                            /  _____/   /  _  \\ |    |   \\      \\__    ___/|    |    \\_   _____/\\__    ___/                            \n" +
                "  ______   ______   ______ /   \\  ___  /  /_\\  \\|    |   /   |   \\|    |   |    |     |    __)_   |    |      ______   ______   ______ \n" +
                " /_____/  /_____/  /_____/ \\    \\_\\  \\/    |    \\    |  /    |    \\    |   |    |___  |        \\  |    |     /_____/  /_____/  /_____/ \n" +
@@ -22,11 +22,11 @@ public class Main {
                "                                                                                                                                       \n" +
                "                                                                                                                                       \n" +
                "                                                                                                                                    ");
-
-
-
-
-
+                          
+                                                                                                                                       
+                                                                                                                                       
+                                                                                                                                       
+                                                                                                                                      
         System.out.println("TUTORIAL: \n" +
                 "Type a direction to move between rooms (east, south, west, north) \n" +
                 "Type: take + object to pick up objects \n" +
@@ -38,7 +38,7 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println("You awaken, dazed and disoriented in a dimly-lit room. As you look around, you realize you appear to be in some sort of dungeon... ");
-        Map map = new Map();
+        Engine map = new Engine();
         Room current_room = map.getCurrentRoom();
         Scanner input = new Scanner(System.in);
 

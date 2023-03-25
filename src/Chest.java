@@ -30,11 +30,6 @@ import java.util.*;
         }
         System.out.println("You need the right key.");
     }
+ }
 
 
-
-
-    public String getType(){
-        return chestType;
-    }
-}

@@ -26,7 +26,7 @@ public class Room {
         roomItems.add(item);
     }
     public void describe(){
-        System.out.println(description + objectPrint());
+        System.out.println(description);
     }
 
     public String objectPrint(){
